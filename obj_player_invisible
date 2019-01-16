@@ -1,3 +1,22 @@
 ///Create
 spd = 8;
-hi
+
+///Step
+
+//Temporary Movement
+if keyboard_check(ord('W')) && !place_meeting(x,y-spd,obj_wall)
+{
+  y -= spd;
+}
+if keyboard_check(ord('A')) && !place_meeting(x-spd,y,obj_wall)
+{
+  x -= spd;
+}
+if keyboard_check(ord('S')) && !place_meeting(x,y+spd,obj_wall)
+{
+  y += spd;
+}
+if keyboard_check(ord('D')) && !place_meeting(x+spd,y,obj_wall)
+{
+  x += spd;
+}
