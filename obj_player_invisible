@@ -3,7 +3,7 @@ spd = 8;
 
 ///Step
 
-//Temporary Movement
+//Bad Movement
 if keyboard_check(ord('W')) && !place_meeting(x,y-spd,obj_wall)
 {
   y -= spd;
